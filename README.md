@@ -1,8 +1,15 @@
 # ForgeWire Labs
 
-ForgeWire Labs is an independent software lab building local-first AI infrastructure, agent tooling, and technical learning systems.
+Local-first AI infrastructure, secure agent tooling, and offline-capable technical learning software.
 
-Current work focuses on secure agent dispatch, offline-capable desktop software, developer-oriented automation, and practical learning tools. The projects here emphasize constrained execution, local ownership, reproducible workflows, and systems that remain useful without depending entirely on cloud services.
+I build systems for running AI-assisted work on machines you own: signed task dispatch, policy-gated runners, repo-native automation, auditable execution, and desktop tools that keep user data local.
+
+## Start here
+
+- **ForgeWire Fabric** — self-hosted control plane for trusted remote task execution.
+- **SkillForge / Apex A+ Academy** — offline-first certification study suite, starting with CompTIA A+.
+- **SCOUT-2** — earlier multi-agent assistant platform and historical foundation for later ForgeWire work.
+
 
 ## Current projects
 
