@@ -1,8 +1,12 @@
 # ForgeWire Labs
 
-Local-first AI infrastructure, secure agent tooling, and offline-capable technical learning software.
+ForgeWire Labs is an independent engineering and applied AI research lab founded by Jeremy Shows.
 
-I build systems for running AI-assisted work on machines you own: signed task dispatch, policy-gated runners, repo-native automation, auditable execution, and desktop tools that keep user data local.
+I build systems around a simple question: how capable can AI-assisted software become while remaining constrained, inspectable, user-owned, and useful on real hardware?
+
+ForgeWire began as an attempt to build a better personal AI system. It has grown into a modular architecture for coordinating models, agents, tools, memory, knowledge, compute, and remote execution without surrendering control to a hosted platform. The work combines production engineering with longer-term research into recurrent reasoning, continual learning, adaptive routing, persistent agency, and human-directed automation.
+
+ForgeWire Labs is where those ideas become working systems.
 
 ## Start here
 
