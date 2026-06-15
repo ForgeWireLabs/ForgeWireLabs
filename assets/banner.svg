@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="ForgeWire Labs — inspectable agent infrastructure, distributed execution, practical AI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#0e1729"/>
+      <stop offset="1" stop-color="#111d33"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#1e2a42" stroke-width="1" opacity="0.5">
+    <path d="M0 80 H1280 M0 160 H1280 M0 240 H1280"/>
+    <path d="M160 0 V320 M320 0 V320 M480 0 V320 M640 0 V320 M800 0 V320 M960 0 V320 M1120 0 V320"/>
+  </g>
+
+  <!-- work-graph motif: signed dispatch across a distributed fabric -->
+  <g transform="translate(900,160)" opacity="0.95">
+    <g stroke="url(#wire)" stroke-width="2.5" fill="none" opacity="0.8">
+      <path d="M0 0 L120 -78"/>
+      <path d="M0 0 L150 0"/>
+      <path d="M0 0 L120 78"/>
+      <path d="M120 -78 L150 0"/>
+      <path d="M120 78 L150 0"/>
+      <path d="M0 0 L-110 -60"/>
+      <path d="M0 0 L-110 60"/>
+    </g>
+    <g fill="#0b1220" stroke="url(#wire)" stroke-width="2.5">
+      <circle cx="120" cy="-78" r="13"/>
+      <circle cx="150" cy="0" r="13"/>
+      <circle cx="120" cy="78" r="13"/>
+      <circle cx="-110" cy="-60" r="11"/>
+      <circle cx="-110" cy="60" r="11"/>
+    </g>
+    <circle cx="0" cy="0" r="22" fill="#0b1220" stroke="url(#spark)" stroke-width="3"/>
+    <path d="M-6 -10 L4 -1 L-2 -1 L6 10 L-4 1 L2 1 Z" fill="url(#spark)"/>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(96,128)">
+    <rect x="0" y="-34" width="6" height="68" rx="3" fill="url(#spark)"/>
+    <text x="28" y="6" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="#f8fafc" letter-spacing="1">ForgeWire<tspan fill="#fbbf24"> Labs</tspan></text>
+    <text x="28" y="48" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="22" font-weight="500" fill="#94a3b8" letter-spacing="0.3">Inspectable agent infrastructure · distributed execution · practical AI</text>
+  </g>
+
+  <!-- founder line -->
+  <text x="124" y="262" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="17" font-weight="600" fill="#64748b" letter-spacing="2.5">JEREMY SHOWS · FOUNDER &amp; PRINCIPAL ENGINEER</text>
+</svg>
