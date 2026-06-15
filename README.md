@@ -48,7 +48,7 @@ An **offline-first certification learning and exam-prep desktop app**, starting 
 
 `comptia` · `exam-prep` · `tauri` · `rust` · `react` · `offline-first`
 
-<!-- TODO: drop real product screenshots here. Suggested: assets/skillforge-*.png -->
+![SkillForge Academy — Study Command Center](assets/skillforge-command-center.png)
 
 ---
 
