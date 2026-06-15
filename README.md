@@ -79,7 +79,7 @@ A capable model can still be part of an unreliable system. ForgeWire focuses on 
 
 The current work descends from years of building, failure, and reconstruction:
 
-**SCOUT → SCOUT-2 → SCOUT-3 → ATLAS → PhrenForge → ForgeWire**
+**SCOUT → SCOUT-2 → ATLAS → PhrenForge → ForgeWire**
 
 - [SCOUT-2](https://github.com/ForgeWireLabs/SCOUT-2) — *Historical.* Multi-agent assistant platform; a record of the experiments and architectural limits that led to ForgeWire.
 - Earlier public projects (**SCOUT**, **Feed-Portal**, **MED.I.C.**) are *archived* and kept for history — not current work.
