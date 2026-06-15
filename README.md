@@ -1,243 +1,113 @@
 # ForgeWire Labs
 
-**Independent engineering and applied AI research focused on building agentic systems that survive contact with the real world.**
+**Independent engineering, applied AI research, and practical software built for the real world.**
 
-ForgeWire Labs is an independent engineering and applied AI research lab founded by **Jeremy Shows**.
+ForgeWire Labs is the independent lab of **Jeremy Shows**.
 
-I build systems around a central question:
+I design and build systems across agent infrastructure, distributed computing, applied machine learning, developer tooling, cognitive architecture, and technical education.
 
-> How do we make AI-assisted systems genuinely useful when models are fallible, infrastructure is imperfect, resources are limited, and deployment conditions keep changing?
+My work is driven by a practical question:
 
-ForgeWire began as an attempt to build a better personal AI system. It has grown into a modular architecture for coordinating models, agents, tools, memory, knowledge, compute, and distributed execution.
+> How do we turn ambitious ideas about intelligence, automation, and learning into systems that remain useful when models are fallible, hardware is limited, infrastructure changes, and real people depend on the result?
 
-The work combines production engineering with longer-term research into recurrent reasoning, continual learning, adaptive routing, calibrated fusion, persistent agency, and human-directed automation.
+ForgeWire Labs is not centered on a single application. It is the home for a growing body of engineering, products, experiments, and research developed through years of building, testing, failure, and reconstruction.
 
-**ForgeWire Labs is where those ideas become working systems.**
+The work ranges from production-oriented infrastructure to experimental model architectures, but the standard remains the same:
+
+**Build it. Test it. Understand its limits. Make it useful.**
 
 ---
 
-## The ForgeWire Thesis
+## What I Work On
+
+ForgeWire Labs currently works across several connected areas.
+
+### Agentic Systems
+
+Infrastructure for coordinating models, agents, tools, memory, knowledge, compute, and human authority as parts of a complete system.
+
+This includes:
+
+* agent and tool orchestration
+* task decomposition and execution
+* policy and capability boundaries
+* memory and knowledge systems
+* local and distributed compute
+* structured events and messaging
+* evaluation, replay, and recovery
+* repository-native agent workflows
+
+### Applied AI Research
+
+Experimental work investigating how intelligent systems can reason, adapt, specialize, preserve useful state, and operate across time.
+
+Current and continuing research interests include:
+
+* recurrent reasoning
+* continual learning
+* adaptive routing
+* calibrated fusion
+* small and hybrid model systems
+* cognitive control
+* persistent agency
+* temporal continuity
+* neuroscience-inspired computation
+
+### Practical Software
+
+Products that apply the same engineering discipline outside AI infrastructure.
+
+These projects emphasize useful workflows, clear ownership, offline capability where appropriate, and software that works under ordinary constraints rather than ideal conditions.
+
+### Technical Education
+
+Tools that make technical knowledge more structured, measurable, and accessible.
+
+The goal is not simply to present information, but to help people develop demonstrable capability.
+
+---
+
+## Selected Work
+
+### [ForgeWire](https://github.com/ForgeWireLabs/forgewire-overview) · Coming Soon
+
+ForgeWire is an unreleased modular system for coordinating models, agents, tools, memory, knowledge, compute, and distributed execution.
+
+It began as a personal AI assistant and evolved through several generations into a much broader architecture for intelligent work.
+
+Its central engineering thesis is:
 
 > **Agentic systems are systems first and models second.**
->
-> Survivability under deployment, through graceful degradation, layered ownership, parity paths, audit trails, and replaceable substrates, is the property that determines whether they are useful, not benchmark scores on a model card.
 
-A capable model can still be part of an unreliable system.
+A capable model can still be part of an unreliable system. ForgeWire therefore focuses on the infrastructure surrounding models: graceful degradation, explicit ownership, behavioral parity, audit trails, recoverable execution, bounded authority, and replaceable components.
 
-Models can be wrong, slow, expensive, unavailable, deprecated, or replaced. Providers change. Dependencies fail. Hardware becomes constrained. Requirements evolve. An agentic system becomes genuinely useful only when the architecture surrounding its models can survive those conditions.
-
-ForgeWire therefore treats a model as one replaceable component within a larger system for intelligent work.
-
-That system must provide:
-
-* graceful degradation when components or services fail
-* explicit ownership and responsibility boundaries
-* portable and accelerated paths with tested behavioral parity
-* durable audit trails connecting intent, execution, and outcome
-* replaceable models, providers, transports, storage layers, and compute substrates
-* observable state and recoverable execution
-* policy boundaries for tools, agents, and remote runners
-* evaluation based on deployed behavior rather than isolated demonstrations
-
-Benchmarks matter, but they are diagnostic rather than definitive. Model quality matters, but model quality alone does not produce a dependable agentic system.
-
-ForgeWire is built around the machinery that allows intelligence to remain useful after it encounters the real world.
-
----
-
-## What ForgeWire Is
-
-ForgeWire is a modular architecture for building, operating, and evolving agentic systems.
-
-It coordinates:
-
-* models and providers
-* personas and specialized agents
-* tools, skills, and permissions
-* memory and knowledge
-* task decomposition and execution
-* local and remote compute
-* structured events and messaging
-* policy and human approval
-* checkpoints, replay, and recovery
-* evaluation, telemetry, and audit
-* desktop and service interfaces
-
-ForgeWire is not a single chatbot, model wrapper, or autonomous agent.
-
-It is the surrounding system: the services, protocols, boundaries, state, control paths, fallback mechanisms, and operational records required to turn model capability into dependable work.
-
-The architecture is intentionally modular. Models, providers, stores, transports, dispatchers, interfaces, and execution substrates should be replaceable without requiring the entire system to be rebuilt around them.
-
----
-
-## Architecture
-
-ForgeWire is composed of specialized layers that can operate independently while participating in a larger coordinated system.
-
-### ForgeCore
-
-ForgeCore is ForgeWire's portable execution substrate.
-
-It provides foundational runtime behavior without depending on the larger application. Its boundaries are deliberately narrow so it can remain liftable, testable, and replaceable.
-
-ForgeCore includes work related to:
-
-* work-graph execution
-* task dispatch
-* capability and policy enforcement
-* runtime coordination
-* Python and native execution paths
-* parity validation
-* compute selection
-* controlled acceleration
-* structured execution results
-
-The substrate exists as a leaf rather than as an inseparable center of the application. That boundary is part of the thesis expressed in code.
-
-### ForgeWire Fabric
-
-ForgeWire Fabric is the distributed execution and control-plane layer.
-
-Fabric allows authenticated work to move across machines while preserving explicit authority, policy, provenance, and execution history.
-
-Its responsibilities include:
-
-* signed task dispatch
-* scope-bound capability tokens
-* policy-gated runners
-* authenticated coordination
-* structured event streams
-* distributed task state
-* runner registration and discovery
-* audit and replay boundaries
-* federated transport
-* control-plane resilience
-
-Fabric extends ForgeWire beyond one process or machine without treating remote execution as implicit trust.
-
-### ForgeWire Bus
-
-ForgeWire Bus is the communication substrate connecting services, agents, runners, and execution environments.
-
-It supports structured events, transport abstraction, persistence boundaries, and local or distributed messaging without forcing the rest of the system to depend on one broker.
-
-### ForgeWire Loom
-
-ForgeWire Loom coordinates execution environments and exposes ForgeWire capabilities to agent and developer tooling.
-
-It participates in the boundary between requested work and the services capable of performing it.
-
-### Services and Applications
-
-Above the substrate are the services that make ForgeWire useful as an integrated system:
-
-* provider and model management
-* personas, agents, tools, and skills
-* conversations and content
-* memory and knowledge
-* jobs and scheduled work
-* task routing and decomposition
-* policy and approval
-* speech and multimodal services
-* desktop, API, CLI, and automation interfaces
-
-Each layer has a defined responsibility. Capability should emerge from their coordination rather than accumulate inside one oversized agent.
-
----
-
-## Why ForgeWire Exists
-
-Most AI products optimize for the immediate interaction between a user and a model.
-
-ForgeWire addresses the larger problem.
-
-A useful agentic system must continue functioning when:
-
-* its preferred provider is unavailable
-* a model produces an invalid result
-* an optional dependency is missing
-* hardware resources are limited
-* a fast implementation cannot be used
-* execution moves to another machine
-* an agent exceeds its permitted scope
-* state must survive process failure
-* behavior must be reconstructed later
-* the architecture evolves without losing operational continuity
-
-These are not edge concerns. They are the conditions under which software actually operates.
-
-ForgeWire exists to investigate and build the system around the model: the part responsible for continuity, coordination, authority, recovery, evaluation, and trust.
-
----
-
-## Engineering Principles
-
-### Systems First
-
-The behavior of the whole system matters more than the apparent intelligence of one component.
-
-### Survivability Over Demonstration
-
-A feature is not complete because it works once. It must remain understandable and recoverable across failure, change, and constrained deployment.
-
-### Graceful Degradation
-
-Optional services and accelerated paths must not become hidden single points of failure. Portable fallback behavior is a first-class architectural concern.
-
-### Behavioral Parity
-
-When ForgeWire provides fast and portable implementations of the same capability, their contracts must remain aligned and testable.
-
-### Layered Ownership
-
-Responsibility is defined across components, repositories, agents, and execution scopes. Ownership boundaries are part of how the system operates.
-
-### Auditability
-
-Documentation, implementation, tests, events, and operational state must remain connected closely enough to reconstruct what the system believed and did.
-
-### Replaceable Substrates
-
-No model, provider, transport, database, runtime, or accelerator should become synonymous with the system itself.
-
-### Bounded Agency
-
-Agents receive capabilities through explicit scopes, policies, and execution boundaries. Intelligence does not automatically grant authority.
-
-### Research Must Earn Integration
-
-Experimental ideas remain separate until they demonstrate useful behavior without weakening the production system's guarantees.
-
----
-
-## Current Public Work
+ForgeWire is under active private development. The public overview documents its direction, history, and release status without presenting unfinished work as an available product.
 
 ### [ForgeWire Fabric](https://github.com/ForgeWireLabs/forgewire-fabric)
 
-A self-hosted control plane for authenticated and auditable remote task execution.
+ForgeWire Fabric is a self-hosted control plane for authenticated remote task execution.
 
-Fabric is currently the primary public window into ForgeWire's systems-first engineering. It demonstrates how work can move across machines through explicit protocols rather than informal agent trust.
+Fabric provides infrastructure for moving work across machines while preserving explicit authority, policy, provenance, and execution history.
 
-Current areas include:
+Its current engineering areas include:
 
-* signed dispatch envelopes
-* capability-aware runners
+* signed task dispatch
+* scope-bound capabilities
+* policy-gated runners
 * structured task events
-* policy enforcement
-* Python and Rust parity
 * distributed persistence
 * audit and replay
 * federated transport
-* developer-tool integration
+* Python and Rust behavioral parity
+* integration with agent and developer tooling
 
-Fabric is one component of the larger ForgeWire architecture, not the entirety of ForgeWire.
+Fabric is publicly available as an independent infrastructure project and as one component of the future ForgeWire system.
 
 ### [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy)
 
-An offline-capable certification learning and exam-preparation platform.
+SkillForge Academy is an offline-capable certification learning and exam-preparation platform.
 
-The first curriculum targets CompTIA A+ and is being designed around:
+Its first learning track targets CompTIA A+ and is being designed around:
 
 * structured certification objectives
 * original practice questions
@@ -249,125 +119,149 @@ The first curriculum targets CompTIA A+ and is being designed around:
 * local progress storage
 * encrypted backups
 
-SkillForge Academy is a ForgeWire Labs product rather than a subsystem of ForgeWire. It reflects the lab's broader interest in practical software that helps people develop real capability.
+SkillForge Academy is not a ForgeWire subsystem. It is a ForgeWire Labs product focused on helping people build and measure practical technical knowledge.
 
 ### [SCOUT-2](https://github.com/ForgeWireLabs/SCOUT-2)
 
-An earlier multi-agent assistant platform and an important part of ForgeWire's engineering lineage.
+SCOUT-2 is an earlier multi-agent assistant platform and an important part of my engineering history.
 
-SCOUT explored model coordination, personas, tools, retrieval, speech, background work, messaging, and desktop AI interaction. Its successes and architectural limitations helped reveal the systems problems that ForgeWire was created to address.
+It explored provider coordination, personas, tools, retrieval, speech, background work, messaging, and desktop AI interaction.
 
-SCOUT-2 remains public as a record of that evolution.
-
----
-
-## Research Directions
-
-ForgeWire Labs also investigates ideas that may eventually extend the production architecture.
-
-Experimental work is not presented as finished capability. It must be implemented, measured, compared against baselines, and introduced through controlled boundaries before becoming part of ForgeWire.
-
-### Recurrent Cognitive Control
-
-This work investigates bounded recurrent processing for tasks that benefit from revision, comparison, refinement, and evaluation.
-
-The objective is not to create unrestricted reasoning loops. It is to develop task-local control that can decide when another pass is useful while preserving explicit limits and observable state.
-
-Research areas include:
-
-* bounded reasoning passes
-* recurrent task state
-* confidence and drift signals
-* controlled route histories
-* task-local checkpoints
-* observe-only controllers
-* measurable stopping conditions
-* privacy-conscious telemetry
-* canary-gated adaptation
-
-### Continual Learning
-
-ForgeWire Labs explores how systems can retain useful experience without uncontrolled drift or catastrophic forgetting.
-
-This includes:
-
-* replay and evaluation
-* specialist routing
-* adaptive caches
-* confuser-focused training
-* calibrated fusion
-* provenance-aware updates
-* function-preserving growth
-* operational measures of adaptation and regret
+SCOUT-2 remains public as a record of the experiments, successes, and architectural limitations that eventually led to ForgeWire.
 
 ---
 
-## From Research to Production
+## Research
 
-ForgeWire maintains a deliberate boundary between speculative architecture and operational capability.
+ForgeWire Labs provides a home for research that may inform future systems without being prematurely presented as production capability.
 
-A research component must pass through stages such as:
+### Routing and Fusion
+
+Earlier HCDM experiments produced two continuing research lines:
+
+* **Ariadne**, focused on routing inputs and tasks among specialized paths
+* **Centrifuse**, focused on evaluating and combining multiple outputs through calibrated fusion
+
+These ideas continue to influence work involving orchestration, recurrent control, specialist systems, replay, and evaluation.
+
+### Recurrent and Hybrid Systems
+
+Current experiments investigate whether small complementary models can combine:
+
+* semantic reasoning
+* dense state representation
+* recurrent processing
+* persistent task state
+* continual adaptation
+* efficient operation on modest hardware
+
+Biological systems can provide useful questions and structural analogies, but they are not treated as proof that an artificial implementation will behave in the same way.
+
+### Temporal Continuity
+
+The TC/TCI/TIC research line distinguishes among:
+
+* continuity of information
+* continuity of agency
+* continuity of subjectivity
+
+A system may retain information without sustaining coherent agency. It may sustain agency without establishing continuing subjectivity.
+
+This work is intended to provide better architectural and ethical language for discussing memory, identity, self-modeling, and persistent systems without collapsing them into unsupported consciousness claims.
+
+### From Research to Engineering
+
+Experimental ideas do not become production components merely because they are interesting.
+
+Research is expected to pass through stages such as:
 
 1. conceptual framing
 2. isolated implementation
 3. baseline comparison
 4. controlled evaluation
-5. replay and failure analysis
+5. failure analysis
 6. observe-only integration
 7. limited canary deployment
 8. production gating
 
-This process allows ambitious ideas to be explored without allowing them to weaken the system that already works.
-
-Research is valuable when it produces clearer questions, measurable behavior, reusable components, or better architecture. It does not need to become a product feature to have succeeded.
+Research can also succeed by producing a better question, clearer boundary, useful measurement, or reusable component. It does not have to become a product feature.
 
 ---
 
-## Built by ForgeWire
+## How I Build
 
-ForgeWire is also being used to help build ForgeWire.
+My engineering approach is shaped by several recurring principles.
 
-The repository contains structured instructions, ownership boundaries, audits, roadmaps, task state, validation scripts, and scoped operational memory that allow coding agents to work within defined areas of responsibility.
+### Systems Before Components
 
-Agents can:
+The behavior of the complete system matters more than the apparent intelligence or performance of one part.
 
-* locate the rules governing their scope
-* inspect prior decisions and audits
+### Real Conditions Matter
+
+A successful demonstration is only a beginning. Software must survive missing dependencies, partial failures, limited hardware, provider changes, invalid outputs, and evolving requirements.
+
+### Authority Must Be Explicit
+
+An agent's ability to perform an action does not automatically give it permission to do so.
+
+### Important Behavior Must Be Inspectable
+
+Execution state, decisions, failures, and outcomes should leave enough evidence to be understood and reconstructed.
+
+### Components Should Remain Replaceable
+
+Models, providers, runtimes, transports, databases, and accelerators are implementation choices. None should become the identity of the whole system.
+
+### Research Must Earn Integration
+
+Experimental work remains separate until it demonstrates value without weakening established operational guarantees.
+
+### Failure Is Useful Evidence
+
+Abandoned systems and unsuccessful experiments are not erased from the history. They often reveal the constraint or architectural boundary that the next system needs.
+
+---
+
+## Built Through the Work
+
+Several ForgeWire Labs projects use repository-native instructions, roadmaps, audits, validation tools, and scoped project memory to coordinate work between me and coding agents.
+
+These systems help agents:
+
+* find the rules governing their scope
+* recover earlier decisions
+* inspect architectural context
 * perform bounded implementation work
 * run appropriate validation
 * update project state
-* preserve useful context for later work
-* escalate when a decision exceeds their authority
+* preserve useful context
+* escalate decisions beyond their authority
 
-This makes the repository more than a place where source code is stored. It is part of the operating environment through which humans and constrained agents coordinate development.
-
-ForgeWire does not assume that agents are reliable merely because they are capable. It builds the controls, records, and recovery paths needed to use them responsibly.
+This is part of an ongoing effort to make agent-assisted development more continuous and dependable without assuming that capable agents are automatically reliable ones.
 
 ---
 
 ## Evolution
 
-ForgeWire emerged through several generations of assistants, orchestration experiments, communication systems, and cognitive architecture research.
+The work behind ForgeWire Labs did not begin with its current name.
 
-The broad lineage is:
+A broad part of its agent-system lineage is:
 
 **SCOUT → SCOUT-2 → SCOUT-3 → ATLAS → PhrenForge → ForgeWire**
 
-Each generation exposed limitations in the previous approach:
+Across those generations:
 
-* monolithic assistants gave way to modular services
-* prompts gave way to personas, tools, skills, and permissions
-* implicit coordination gave way to structured events
-* direct execution gave way to policy and capability boundaries
-* single-machine assumptions gave way to authenticated distributed work
-* fragile acceleration gave way to tested parity paths
-* scattered project context gave way to repo-native memory and governance
-* speculative cognitive components gave way to gated research programs
-* model-centered design gave way to systems-first architecture
+* monolithic assistants became modular services
+* prompts became personas, tools, skills, and permissions
+* implicit coordination became structured events
+* direct execution gained policy and capability boundaries
+* single-machine assumptions expanded into authenticated distributed work
+* acceleration paths gained portable parity implementations
+* scattered project context became repo-native memory and governance
+* speculative cognitive ideas became gated research programs
+* model-centered development became systems-first engineering
 
-The current ForgeWire thesis was not chosen as branding. It was extracted from the failure modes and design constraints encountered across those rewrites.
-
-Implementations will continue to change. The thesis is intended to survive them.
+ForgeWire Labs represents more than the latest name in that progression. It provides an identity under which different products, systems, experiments, and research programs can develop without all becoming parts of one application.
 
 ---
 
@@ -377,82 +271,62 @@ I am a self-taught engineer and independent researcher with a background spannin
 
 That history shapes how I approach software.
 
-I tend to see AI systems as machinery: assemblies of components with interfaces, tolerances, failure modes, feedback paths, and operational limits. A convincing demonstration is not enough. The system must still work when a component fails, hardware is limited, requirements change, or an automated process exceeds its authority.
+I tend to see AI systems as machinery: assemblies of components with interfaces, tolerances, failure modes, feedback paths, and operational limits.
 
-My work crosses:
+A convincing demonstration is not enough. The system must still work when a component fails, hardware is constrained, requirements change, or an automated process exceeds its authority.
+
+My work now crosses:
 
 * distributed systems
 * agent infrastructure
 * applied machine learning
 * developer tooling
-* desktop software
+* desktop applications
 * technical education
 * cognitive architecture
 * neuroscience-inspired computation
 * security and policy boundaries
 * evaluation and automation
 
-I am not approaching these subjects from a single academic discipline or conventional career path. ForgeWire Labs grew from repeatedly learning what was necessary to build the next part, testing it, discovering where it failed, and rebuilding it with stronger boundaries.
+I did not arrive here through a single academic discipline or a conventional software career.
 
-ForgeWire Labs is the home for that work.
+ForgeWire Labs grew from repeatedly learning what was necessary to build the next part, testing it, discovering where it failed, and rebuilding it with a better understanding of the problem.
 
 ---
 
-## Development Model
+## Current Direction
 
-ForgeWire is developed as an integrated private system. Stable components and products are released publicly as their contracts, documentation, tests, security boundaries, and operational behavior mature.
+ForgeWire Labs is an independent, founder-led lab under active development.
 
-Public releases are intended to include enough context to be evaluated seriously:
+### Public Work
 
-* architecture and design documentation
-* tests and validation evidence
-* security and authority boundaries
-* changelogs and migration guidance
-* known limitations
-* operational instructions
-* separation between production and experimental work
+* **ForgeWire Fabric:** distributed task execution and control-plane infrastructure
+* **SkillForge Academy:** certification learning and exam preparation
+* **SCOUT-2:** historical multi-agent platform
+* **ForgeWire Overview:** public documentation for the unreleased ForgeWire system
 
-### Current Public Focus
+### Private Development
 
-* **ForgeWire Fabric:** validation, documentation, and public release hardening
-* **SkillForge Academy:** offline-capable certification learning
-* **SCOUT-2:** historical foundation and architectural lineage
-
-### Active Private Work
-
-* ForgeWire core integration
-* ForgeCore runtime and compute substrate
-* Fabric control-plane development
-* knowledge and memory productization
+* ForgeWire system integration
+* portable and accelerated execution substrates
+* knowledge and memory systems
+* agent-assisted repository operations
 * evaluation and benchmarking
-* repository-native agent operations
-* recurrent cognitive control planning
+* recurrent cognitive control
 * routing, fusion, and continual-learning experiments
+
+Public releases are prepared with enough documentation, testing, security context, known limitations, and architectural explanation to be evaluated seriously.
 
 ---
 
 ## Technical Foundation
 
-ForgeWire Labs currently works primarily with:
+Current work primarily uses:
 
 **Rust · Python · TypeScript · React · Tauri · GTK · SQLite · rqlite · PostgreSQL · PowerShell · GitHub Actions**
 
-Technology is selected according to the role it serves.
-
-ForgeWire is not organized around promoting a particular language, framework, model provider, database, accelerator, or cloud platform. Those are implementation choices within the system, not the identity of the system.
+Technologies are selected for the roles they serve. ForgeWire Labs is not defined by one language, framework, model provider, database, accelerator, or cloud platform.
 
 ---
 
-## Current Status
-
-ForgeWire Labs is an independent, founder-led lab under active development.
-
-Some systems are public. Others remain private while their architecture and release boundaries are stabilized. Research programs are identified separately from production capabilities.
-
-The work is ambitious, but its standard is practical:
-
-> **Agentic systems are systems first and models second.**
-
-Build the whole system. Test it under failure. Preserve its history. Keep its parts replaceable. Make its authority explicit.
-
-Then determine whether it is useful.
+> Build the whole system. Test it under failure. Understand its limits. Then determine whether it is useful.
