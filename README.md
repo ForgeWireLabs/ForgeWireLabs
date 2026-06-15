@@ -88,4 +88,16 @@ The current work descends from years of building, failure, and reconstruction:
 <img src="assets/headshot.jpg" align="right" width="180" alt="Jeremy Shows" />
 -->
 
+<!-- TODO (writing): drafts live in writing/. Once finalized, uncomment to surface them.
+## Writing
+
+- **Agentic systems are systems first and models second** — reliability lives in the assembly, not the component.
+- **Why coding agents need repository-native governance** — binding invariants and durable state in the repo.
+- **Remote agents without surrendering execution control** — signed dispatch, scope-bound tokens, audited runs.
+- **Building serious AI infrastructure on constrained hardware** — constraints as a design input.
+- **What failed between SCOUT and ForgeWire** — the lineage read as corrected structural failures.
+
+---
+-->
+
 **Independent · founder-led · evidence-driven.** Reach me through the repositories above, or open an issue/security advisory on the relevant project.
