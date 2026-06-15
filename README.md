@@ -24,7 +24,7 @@ A self-hosted control plane for **authenticated remote task execution** — move
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
-<!-- TODO: drop architecture diagram + short terminal recording here. Suggested: assets/fabric-architecture.svg + a demo.gif -->
+> 📐 Architecture diagram lives in the [Fabric README](https://github.com/ForgeWireLabs/forgewire-fabric#how-it-works). <!-- TODO: add a short terminal/demo recording (assets/fabric-demo.gif). -->
 
 ### 📜 [RepoPact](https://github.com/ForgeWireLabs/repopact) · **Available — Early Development**
 
@@ -38,7 +38,7 @@ intent → scoped authority → work item → implementation → evidence → au
 
 `coding-agents` · `repository-governance` · `agents-md` · `developer-tools` · `ai-governance`
 
-<!-- TODO: drop workflow diagram here. Suggested: assets/repopact-flow.svg -->
+![RepoPact core loop over a filesystem state machine](assets/repopact-flow.svg)
 
 ### 🎓 [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) · **Downloadable Product**
 
