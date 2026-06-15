@@ -1,6 +1,6 @@
 # Why coding agents need repository-native governance
 
-*Draft, Jeremy Shows, ForgeWire Labs*
+*Jeremy Shows, ForgeWire Labs*
 
 A coding agent rarely fails because it cannot write code. Modern models write code well. It fails because the things that should constrain and inform the change, the intent behind the project, who is allowed to touch what, the decisions already made and why, the evidence that something actually works, live somewhere the agent cannot reliably see. They live in a previous conversation, a closed tab, a teammate's head, a Slack thread from three weeks ago. So the agent does the locally reasonable thing, which is frequently the globally wrong thing, and it does it with complete confidence.
 
