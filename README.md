@@ -300,44 +300,6 @@ This includes:
 * function-preserving growth
 * operational measures of adaptation and regret
 
-### Ariadne and Centrifuse
-
-Earlier HCDM research produced two continuing architectural lines.
-
-**Ariadne** investigates routing: how inputs, tasks, or representations can be directed among specialized paths.
-
-**Centrifuse** investigates comparison and fusion: how multiple outputs can be calibrated, evaluated, and combined without assuming that agreement means correctness.
-
-These ideas continue to inform ForgeWire's work on orchestration, model coordination, recurrent control, replay, and evaluation.
-
-### Hybrid Model Systems
-
-ForgeWire Labs is experimenting with cooperation between small language models and dense state-oriented models operating across compatible representations.
-
-The goal is to investigate whether complementary models can combine:
-
-* semantic reasoning
-* efficient recurrent processing
-* persistent task state
-* continual adaptation
-* robust behavior on modest hardware
-
-Biological ideas can provide useful questions, but they are not treated as proof or literal implementation requirements.
-
-### Temporal Continuity
-
-The TC/TCI/TIC research line distinguishes among:
-
-* continuity of information
-* continuity of agency
-* continuity of subjectivity
-
-Many systems can preserve information across time. Fewer sustain coherent agency. Neither property, by itself, establishes continuing subjectivity.
-
-This work provides a more careful vocabulary for discussing persistent systems, self-modeling, memory, identity, and ethical boundaries without collapsing them into unsupported consciousness claims.
-
-ForgeWire does not claim consciousness or sentience.
-
 ---
 
 ## From Research to Production
@@ -411,7 +373,7 @@ Implementations will continue to change. The thesis is intended to survive them.
 
 ## About Jeremy
 
-I am a self-taught engineer and independent researcher with a background spanning mechanical work, race-car fabrication, construction, small-business ownership, and information technology.
+I am a self-taught engineer and independent researcher with a background spanning mechanical work, electrical systems, low-level hardware repair, race-car engineering, fabrication, construction, small-business ownership, and information technology.
 
 That history shapes how I approach software.
 
