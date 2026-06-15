@@ -13,6 +13,7 @@ GitHub has **no API** for social previews — each must be uploaded by hand:
 | [repopact](https://github.com/ForgeWireLabs/repopact/settings) | `repopact.png` |
 | [skillforge-academy](https://github.com/ForgeWireLabs/skillforge-academy/settings) | `skillforge-academy.png` |
 | [ForgeWire-Overview](https://github.com/ForgeWireLabs/ForgeWire-Overview/settings) | `ForgeWire-Overview.png` |
+| [ForgeWireLabs (org profile)](https://github.com/ForgeWireLabs/ForgeWireLabs/settings) | `ForgeWireLabs.png` |
 
 The `.svg` source files are kept alongside each `.png`. To re-render after an edit:
 
