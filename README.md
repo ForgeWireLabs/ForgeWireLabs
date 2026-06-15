@@ -24,6 +24,8 @@ A self-hosted control plane for **authenticated remote task execution** — move
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
+![forgewire-fabric-cli doctor — a healthy hub on an rqlite-backed cluster](assets/fabric-doctor.svg)
+
 > 📐 Architecture diagram lives in the [Fabric README](https://github.com/ForgeWireLabs/forgewire-fabric#how-it-works). <!-- TODO: add a short terminal/demo recording (assets/fabric-demo.gif). -->
 
 ### 📜 [RepoPact](https://github.com/ForgeWireLabs/repopact) · **Available — Early Development**
