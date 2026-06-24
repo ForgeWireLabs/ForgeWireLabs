@@ -1,5 +1,5 @@
 <!-- Banner. Replace assets/banner.svg with a PNG export if you prefer raster. -->
-![ForgeWire Labs — inspectable agentic infrastructure, repo-native governance, distributed execution, human attention boundaries, practical AI](assets/banner.svg)
+![ForgeWire Labs — inspectable agentic infrastructure, repo-native governance, distributed execution, human-agent communication governance, practical AI](assets/banner.svg)
 
 # Jeremy Shows
 
@@ -28,7 +28,7 @@ The public projects are organized around the boundaries agentic systems need whe
 ```text
 RepoPact  → inspectable work governance
 Fabric    → inspectable execution governance
-ForgeLink → inspectable human-attention governance
+ForgeLink → inspectable human-agent communication governance
 ForgeWire → integrated agentic environment
 ```
 
@@ -92,19 +92,19 @@ RepoPact does not replace coding agents. It gives them a durable operating envir
 
 ### ☎️ [ForgeLink](https://github.com/ForgeWireLabs/ForgeLink) · **Available — Early Development**
 
-A local-first **human attention and approval boundary for agentic systems**.
+A local-first **communications and decision runtime for humans and agents**.
 
-ForgeLink gives local agents, MCP clients, and ForgeWire/Fabric workflows a controlled way to ask for human attention, request approval, and receive human decisions without becoming another feed, leaking sensitive context into ordinary chat surfaces, or turning the operator into a notification target.
+ForgeLink is built for both sides of the relationship: agents need a governed way to request human attention, authority, and decisions and to report outcomes; humans need a private, inspectable place to receive, review, approve, deny, defer, and replay that activity — without becoming another feed, leaking sensitive context into ordinary chat surfaces, or turning the operator into a notification target. Channels are edges; the center is governed communication state.
 
 ```text
-agent request → attention policy → human decision → recorded outcome
+human / agent / channel → governed communication state → decision → recorded outcome → replay
 ```
 
-ForgeLink currently ships as an Electron desktop app with a TypeScript backend, local SQLite storage, Twilio SMS/MMS support, an MCP human bridge, per-channel credentials, backup/export tools, delivery-state handling, and explicit attention policy.
+ForgeLink ships a provider-neutral communications runtime (Twilio and Telnyx SMS/MMS, Twilio Voice, durable call history, and a contact timeline), rich contacts with per-contact attention policy, and a working agent-human governance layer — agent identity and trust, evidence-bearing approval requests, risk tiers, signed and replayable decision records, and a tamper-evident audit chain — on an Electron/TypeScript app with local SQLite, an MCP human bridge, per-channel credentials, and backup/export tooling. In progress: an operator cockpit (Decisions · People · Agents · Channels) and a mobile decision companion.
 
-It is not a social feed, public messaging platform, work runner, or hosted notification relay. It is a private operator boundary for agent-human communication.
+It is not a phone clone, social feed, public messaging platform, work runner, or hosted notification relay. It is a private operator boundary for human-agent communication.
 
-`human-in-the-loop` · `mcp` · `electron` · `twilio` · `agentic-ai`
+`human-in-the-loop` · `operator-cockpit` · `communications-runtime` · `mcp` · `electron` · `agentic-ai`
 
 ---
 
@@ -177,9 +177,9 @@ provider network, personas, skills, memory, knowledge, orchestration
         |                      |
         v                      v
 Fabric                 ForgeLink
-secure execution       human attention / approval
-dispatch, policy,      ask, escalate, decide,
-streams, audit         record outcome
+secure execution       human-agent communication
+dispatch, policy,      ask, decide, record,
+streams, audit         replay outcome
         |
         v
 Runner / model
