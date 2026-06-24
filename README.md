@@ -68,7 +68,7 @@ Fabric is for teams and operators who want remote agents, local compute, GPU box
 
 A **repo-native kernel for durable work between humans and coding agents**.
 
-RepoPact keeps authority, intent, work state, evidence, decisions, drift checks, and project history inside the repository instead of letting them vanish with each agent session. It is the harness inside the harness: Claude Code, Codex, Cursor, OpenHands, VS Code agents, Minion-style agents, or any other coding harness can enter the same governed work environment.
+RepoPact keeps authority, intent, work state, evidence, decisions, drift checks, and project history inside the repository instead of letting them vanish with each agent session. It is the harness inside the harness: Claude Code, Codex, Cursor, OpenHands, VS Code agents, or any other coding harness can enter the same governed work environment.
 
 ```text
 intent → scoped authority → work item → implementation → evidence → audit → history
