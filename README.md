@@ -7,6 +7,10 @@
 
 I build **inspectable agentic infrastructure**: repo-native work governance, secure distributed execution, human-in-the-loop communication boundaries, and practical AI software that stays useful under real-world constraints — when models are fallible, hardware is limited, infrastructure shifts, and real people depend on the result.
 
+ForgeWire Labs is a **largely solo, human-led, deeply AI-assisted engineering and research effort**. I work directly alongside multiple AI systems across technical research, architecture, implementation, debugging, testing, review, and documentation. I choose runtimes, languages, system boundaries, patterns, workflows, and product direction; challenge or reject agent proposals; and often step into deadlocked implementation loops with the root-cause fix or missing abstraction before sending the work back through implementation and validation.
+
+AI systems make substantial contributions to the work. I do not claim unaided authorship, and the projects build extensively on open research, open-source software, commercial AI tools, and established systems engineering. At the same time, the engineering process is not delegated wholesale to agents: I research alongside them, integrate the resulting work, and retain technical responsibility for architecture, system behavior, validation, and final acceptance.
+
 Former mechanic, race-car builder, fabricator, IT professional, and small-business owner, now building distributed systems and applied AI infrastructure. I see AI systems as **machinery** — assemblies of components with interfaces, tolerances, feedback paths, authority boundaries, and failure modes — and I hold them to that standard: a convincing demo is not enough; the system has to keep working when a part fails, the hardware is constrained, the requirements change, or an automated process exceeds its authority.
 
 > **Build it. Test it under failure. Preserve the evidence. Understand its limits. Then decide whether it is useful.**
@@ -23,13 +27,13 @@ ForgeWire Labs is built around a different premise:
 
 > **Inspect the work. Bound the authority. Preserve the evidence.**
 
-The public projects are organized around the boundaries agentic systems need when they move from demos into real work:
+The projects are organized around the boundaries agentic systems need when they move from demos into real work. Some are public/open; others are private development:
 
 ```text
-RepoPact  → inspectable work governance
-Fabric    → inspectable execution governance
-ForgeLink → inspectable human-agent communication governance
-ForgeWire → integrated agentic environment
+RepoPact  → inspectable work governance             [public / Apache-2.0]
+Fabric    → inspectable execution governance        [private / proprietary]
+ForgeLink → inspectable human-agent communication   [public project]
+ForgeWire → integrated agentic environment          [private development]
 ```
 
 The goal is not to make a model appear autonomous. The goal is to build the surrounding infrastructure that lets models, agents, tools, humans, and machines cooperate without hiding state, authority, failure, or responsibility.
@@ -38,10 +42,7 @@ The goal is not to make a model appear autonomous. The goal is to build the surr
 
 ## Agentic Infrastructure
 
-### 🧵 [ForgeWire Fabric](https://github.com/ForgeWireLabs/forgewire-fabric) · **Available — Alpha**
-
-[![release](https://img.shields.io/github/v/release/ForgeWireLabs/forgewire-fabric?label=release&color=f59e0b)](https://github.com/ForgeWireLabs/forgewire-fabric/releases)
-[![license](https://img.shields.io/github/license/ForgeWireLabs/forgewire-fabric?color=3b82f6)](https://github.com/ForgeWireLabs/forgewire-fabric/blob/main/LICENSE)
+### 🧵 ForgeWire Fabric · **Private Development — Alpha**
 
 A self-hosted control plane for **authenticated remote task execution**.
 
@@ -51,14 +52,13 @@ Fabric moves work across machines while keeping authority, policy, provenance, a
 authorized intent → signed dispatch → scoped runner → streamed execution → audit trail
 ```
 
-Fabric is for teams and operators who want remote agents, local compute, GPU boxes, build hosts, lab machines, and private infrastructure without surrendering execution control to a hosted agent platform.
+Fabric is for operators who want remote agents, local compute, GPU boxes, build hosts, lab machines, and private infrastructure without surrendering execution control to a hosted agent platform.
+
+**Licensing status:** current Fabric source and current/future ForgeWire Labs development are private and proprietary, not open source, unless a specific distribution is explicitly licensed otherwise. Versions or copies previously distributed under Apache License 2.0 remain licensed under the terms that accompanied those specific versions or copies. The move to private development does not revoke rights already granted for historical Apache-2.0 distributions.
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
 ![forgewire-fabric-cli doctor — a healthy hub on an rqlite-backed cluster](assets/fabric-doctor.svg)
-
-> 📐 Architecture diagram lives in the [Fabric README](https://github.com/ForgeWireLabs/forgewire-fabric#how-it-works).
-<!-- TODO: add a short terminal/demo recording (assets/fabric-demo.gif). -->
 
 ---
 
@@ -128,7 +128,7 @@ SkillForge is not part of the agentic infrastructure stack, but it reflects the 
 
 ## The Larger System: [ForgeWire](https://github.com/ForgeWireLabs/ForgeWire-Overview)
 
-The public projects above are extracted from, adjacent to, or designed for a larger **privately developed** system.
+The projects above are extracted from, adjacent to, or designed for a larger **privately developed** system.
 
 ForgeWire is a modular architecture for coordinating models, agents, tools, skills, personas, memory, knowledge, task execution, automation, policy, human interaction, and distributed compute.
 
@@ -200,6 +200,9 @@ ForgeWire Labs projects are built to move those responsibilities into inspectabl
 
 ## How I Build
 
+- **Human-led, deeply AI-assisted.** I work alongside AI systems across research, architecture, implementation, debugging, testing, review, and documentation. They materially contribute to the work; I select runtimes, languages, patterns, system boundaries, and workflows, integrate the results, and make the final technical calls.
+- **Research alongside the agents.** I do not treat agent output as an answer key. I investigate the same problems, compare evidence, challenge recommendations, and use disagreement or failed implementations to refine the model of the problem.
+- **Break deadlocks at the abstraction level.** When an agent loop keeps patching symptoms, I step back to the system boundary, identify the missing abstraction or root cause, and redirect implementation around that correction.
 - **Systems before components.** A working part is not a working system. I design for seams, failure modes, authority boundaries, recovery paths, and operational evidence first.
 - **Evidence over demos.** Releases should include documentation, tests, security context, known limitations, architecture, and validation paths so they can be evaluated seriously.
 - **Prompt text is not a security boundary.** Agents receive projected authority; tools, policy, scope, and execution layers enforce what is actually allowed.
@@ -254,4 +257,4 @@ Historical projects:
 ---
 -->
 
-**Independent · founder-led · evidence-driven.** Reach me through the repositories above, or open an issue/security advisory on the relevant project.
+**Independent · founder-led · largely solo · deeply AI-assisted · evidence-driven.** Reach me through the repositories above, or open an issue/security advisory on the relevant public project.
