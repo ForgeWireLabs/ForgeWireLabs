@@ -10,8 +10,8 @@ GitHub has **no API** for social previews — each must be uploaded by hand:
 | Repo | File |
 |---|---|
 | [forgewire-fabric](https://github.com/ForgeWireLabs/forgewire-fabric/settings) | `forgewire-fabric.png` |
-| [repopact](https://github.com/ForgeWireLabs/repopact/settings) | `repopact.png` |
-| [skillforge-academy](https://github.com/ForgeWireLabs/skillforge-academy/settings) | `skillforge-academy.png` |
+| [repopact-core](https://github.com/ForgeWireLabs/repopact-core/settings) | `repopact.png` |
+| [skillforge-academy](https://github.com/JeremyShows/skillforge-academy/settings) | `skillforge-academy.png` |
 | [ForgeWire-Overview](https://github.com/ForgeWireLabs/ForgeWire-Overview/settings) | `ForgeWire-Overview.png` |
 | [ForgeWireLabs (org profile)](https://github.com/ForgeWireLabs/ForgeWireLabs/settings) | `ForgeWireLabs.png` |
 

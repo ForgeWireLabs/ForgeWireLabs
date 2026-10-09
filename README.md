@@ -62,9 +62,9 @@ Fabric is for operators who want remote agents, local compute, GPU boxes, build 
 
 ---
 
-### 📜 [RepoPact](https://github.com/ForgeWireLabs/repopact) · **Available — Early Development**
+### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Available — Early Development**
 
-[![license](https://img.shields.io/github/license/ForgeWireLabs/repopact?color=3b82f6)](https://github.com/ForgeWireLabs/repopact/blob/main/LICENSE)
+[![license](https://img.shields.io/github/license/ForgeWireLabs/repopact-core?color=3b82f6)](https://github.com/ForgeWireLabs/repopact-core/blob/main/LICENSE)
 
 A **repo-native kernel for durable work between humans and coding agents**.
 
@@ -84,13 +84,15 @@ can be meaningful when the repo already defines active work, invariants, evidenc
 
 RepoPact does not replace coding agents. It gives them a durable operating environment.
 
+The desktop and mobile application is developed separately in [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench).
+
 `coding-agents` · `repository-governance` · `agents-md` · `developer-tools` · `ai-governance`
 
 ![RepoPact core loop over a filesystem state machine](assets/repopact-flow.svg)
 
 ---
 
-### ☎️ [ForgeLink](https://github.com/ForgeWireLabs/ForgeLink) · **Available — Early Development**
+### ☎️ [ForgeLink](https://github.com/JeremyShows/ForgeLink) · **Available — Early Development**
 
 A local-first **communications and decision runtime for humans and agents**.
 
@@ -110,9 +112,9 @@ It is not a phone clone, social feed, public messaging platform, work runner, or
 
 ## Product Work
 
-### 🎓 [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) · **Downloadable Product**
+### 🎓 [SkillForge Academy](https://github.com/JeremyShows/skillforge-academy) · **Downloadable Product**
 
-[![release](https://img.shields.io/github/v/release/ForgeWireLabs/skillforge-academy?label=download&color=22c55e)](https://github.com/ForgeWireLabs/skillforge-academy/releases)
+[![release](https://img.shields.io/github/v/release/JeremyShows/skillforge-academy?label=download&color=22c55e)](https://github.com/JeremyShows/skillforge-academy/releases)
 
 An **offline-first certification learning and exam-prep desktop app**, starting with CompTIA A+.
 
@@ -235,7 +237,7 @@ Across those generations:
 
 Historical projects:
 
-- [SCOUT-2](https://github.com/ForgeWireLabs/SCOUT-2) — *Historical.* Multi-agent assistant platform; a record of experiments, communication tools, agent patterns, and architectural limits that led to ForgeWire, ForgeLink, and later infrastructure.
+- [SCOUT-2](https://github.com/JeremyShows/SCOUT-2) — *Historical.* Multi-agent assistant platform; a record of experiments, communication tools, agent patterns, and architectural limits that led to ForgeWire, ForgeLink, and later infrastructure.
 - Earlier public projects (**SCOUT**, **Feed-Portal**, **MED.I.C.**) are *archived* and kept for history — not current work.
 
 ---
