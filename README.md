@@ -1,14 +1,14 @@
-![ForgeWire Labs — inspectable agentic infrastructure, repo-native governance, distributed execution, human-agent communication governance, practical AI](assets/banner.svg)
+![ForgeWire Labs: software for AI work, remote execution, and human decisions](assets/banner.svg)
 
 <p align="center"><strong>FORGEWIRE · COMING SOON</strong><br>Private development · No public download or release date announced</p>
 
-**ForgeWire is the larger system taking shape at ForgeWire Labs.** It brings personas, configurable models, bounded tools, skills, state, and task execution into an operator-owned workspace. The [public ForgeWire overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) is the first stop for its product preview, architecture diagrams, private-workspace guidance, and current release status.
+**ForgeWire is the main application under development at ForgeWire Labs.** It brings personas, model providers, tools, skills, projects, and tasks into a workspace the operator controls. See the [ForgeWire overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) for a screen capture, architecture diagrams, instructions for private workspaces, and release status.
 
 | Explore | What you will find |
 | --- | --- |
 | [ForgeWire overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) | Current public presentation, a genuine development-build Projects capture, five architecture diagrams, and Coming Soon status. |
 | [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) | Public, early-development repository governance. |
-| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Public, early-development human–agent communication. |
+| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Public, early-development human-agent communication. |
 | ForgeWire Fabric | Private alpha execution control plane; no public deployment path. |
 
 ---
@@ -17,13 +17,11 @@
 
 **Founder & Principal Engineer, ForgeWire Labs**
 
-I build **inspectable agentic infrastructure**: repo-native work governance, secure distributed execution, human-in-the-loop communication boundaries, and practical AI software that stays useful under real-world constraints — when models are fallible, hardware is limited, infrastructure shifts, and real people depend on the result.
+I build software for people working with AI agents: repository tools that track decisions and evidence, remote execution with explicit permissions, and private channels for approvals. The work has to hold up when a model makes a mistake, a machine fails, or the operator needs to step in.
 
-ForgeWire Labs is a **largely solo, human-led, deeply AI-assisted engineering and research effort**. I work directly alongside multiple AI systems across technical research, architecture, implementation, debugging, testing, review, and documentation. I choose runtimes, languages, system boundaries, patterns, workflows, and product direction; challenge or reject agent proposals; and often step into deadlocked implementation loops with the root-cause fix or missing abstraction before sending the work back through implementation and validation.
+I work on the research, architecture, code, debugging, tests, and documentation with substantial help from AI systems. I choose the tools and design, check their output, and decide what gets accepted. The projects also draw on open research, open-source software, commercial tools, and established engineering practice.
 
-AI systems make substantial contributions to the work. I do not claim unaided authorship, and the projects build extensively on open research, open-source software, commercial AI tools, and established systems engineering. At the same time, the engineering process is not delegated wholesale to agents: I research alongside them, integrate the resulting work, and retain technical responsibility for architecture, system behavior, validation, and final acceptance.
-
-Former mechanic, race-car builder, fabricator, IT professional, and small-business owner, now building distributed systems and applied AI infrastructure. I see AI systems as **machinery** — assemblies of components with interfaces, tolerances, feedback paths, authority boundaries, and failure modes — and I hold them to that standard: a convincing demo is not enough; the system has to keep working when a part fails, the hardware is constrained, the requirements change, or an automated process exceeds its authority.
+I was a mechanic, race-car builder, fabricator, IT professional, and small-business owner before working on distributed systems and AI software. That background shapes how I build: I look for the parts, their connections, and what happens when one fails. A demo has to survive contact with limited hardware, changing requirements, and operator intervention.
 
 > **Build it. Test it under failure. Preserve the evidence. Understand its limits. Then decide whether it is useful.**
 
@@ -31,30 +29,24 @@ Former mechanic, race-car builder, fabricator, IT professional, and small-busine
 
 ## What ForgeWire Labs Builds
 
-ForgeWire Labs creates infrastructure for agentic systems that can be inspected, governed, delegated, audited, and recovered.
+ForgeWire Labs builds tools for tracking agent work, setting permissions, running tasks, and recording decisions.
 
-Most agent products ask you to trust the agent.
-
-ForgeWire Labs is built around a different premise:
-
-> **Inspect the work. Bound the authority. Preserve the evidence.**
-
-The projects are organized around the boundaries agentic systems need when they move from demos into real work. Some are public/open; others are private development:
+The projects cover different parts of that work. Some have public repositories; others are still private:
 
 ```text
-RepoPact  → inspectable work governance             [public / Apache-2.0]
-Fabric    → inspectable execution governance        [private / proprietary]
-ForgeLink → inspectable human-agent communication   [public project]
-ForgeWire → integrated agentic environment          [private development]
+RepoPact  → repository work records                 [public / Apache-2.0]
+Fabric    → remote execution                       [private / proprietary]
+ForgeLink → human-agent communication               [public project]
+ForgeWire → application and runtime                 [private development]
 ```
 
-The goal is not to make a model appear autonomous. The goal is to build the surrounding infrastructure that lets models, agents, tools, humans, and machines cooperate without hiding state, authority, failure, or responsibility.
+The common concern is practical: people need to know what ran, what it changed, and what to do when it fails.
 
 ---
 
 ## Agentic Infrastructure
 
-### 🧵 ForgeWire Fabric · **Private Development — Alpha**
+### 🧵 ForgeWire Fabric · **Private Development: Alpha**
 
 A self-hosted control plane for **authenticated remote task execution**.
 
@@ -70,17 +62,17 @@ Fabric is for operators who want remote agents, local compute, GPU boxes, build 
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
-![forgewire-fabric-cli doctor — a healthy hub on an rqlite-backed cluster](assets/fabric-doctor.svg)
+![forgewire-fabric-cli doctor: a healthy hub on an rqlite-backed cluster](assets/fabric-doctor.svg)
 
 ---
 
-### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Available — Early Development**
+### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Available: Early Development**
 
 [![license](https://img.shields.io/github/license/ForgeWireLabs/repopact-core?color=3b82f6)](https://github.com/ForgeWireLabs/repopact-core/blob/main/LICENSE)
 
 A **repo-native kernel for durable work between humans and coding agents**.
 
-RepoPact keeps authority, intent, work state, evidence, decisions, drift checks, and project history inside the repository instead of letting them vanish with each agent session. It is the harness inside the harness: Claude Code, Codex, Cursor, OpenHands, VS Code agents, or any other coding harness can enter the same governed work environment.
+RepoPact keeps authority, intent, work state, evidence, decisions, drift checks, and project history inside the repository instead of letting them vanish with each agent session. Claude Code, Codex, Cursor, OpenHands, VS Code agents, and other coding tools can use that repository state.
 
 ```text
 intent → scoped authority → work item → implementation → evidence → audit → history
@@ -104,17 +96,17 @@ The desktop and mobile application is developed separately in [RepoPact Workbenc
 
 ---
 
-### ☎️ [ForgeLink](https://github.com/JeremyShows/ForgeLink) · **Available — Early Development**
+### ☎️ [ForgeLink](https://github.com/JeremyShows/ForgeLink) · **Available: Early Development**
 
 A local-first **communications and decision runtime for humans and agents**.
 
-ForgeLink is built for both sides of the relationship: agents need a governed way to request human attention, authority, and decisions and to report outcomes; humans need a private, inspectable place to receive, review, approve, deny, defer, and replay that activity — without becoming another feed, leaking sensitive context into ordinary chat surfaces, or turning the operator into a notification target. Channels are edges; the center is governed communication state.
+ForgeLink gives agents a way to request attention or approval and gives people one place to review those requests. It records decisions and outcomes without pushing sensitive context into ordinary chat channels.
 
 ```text
 human / agent / channel → governed communication state → decision → recorded outcome → replay
 ```
 
-ForgeLink ships a provider-neutral communications runtime (Twilio and Telnyx SMS/MMS, Twilio Voice, durable call history, and a contact timeline), rich contacts with per-contact attention policy, and a working agent-human governance layer — agent identity and trust, evidence-bearing approval requests, risk tiers, signed and replayable decision records, and a tamper-evident audit chain — on an Electron/TypeScript app with local SQLite, an MCP human bridge, per-channel credentials, and backup/export tooling. In progress: an operator cockpit (Decisions · People · Agents · Channels) and a mobile decision companion.
+ForgeLink currently includes SMS/MMS through Twilio and Telnyx, Twilio Voice, call history, contacts, approval requests with supporting evidence, signed decision records, and an audit chain. It runs as an Electron/TypeScript app with local SQLite storage, an MCP bridge, and backup/export tools. An operator view and mobile companion are in progress.
 
 It is not a phone clone, social feed, public messaging platform, work runner, or hosted notification relay. It is a private operator boundary for human-agent communication.
 
@@ -136,7 +128,7 @@ SkillForge is not part of the agentic infrastructure stack, but it reflects the 
 
 `comptia` · `exam-prep` · `tauri` · `rust` · `react` · `offline-first`
 
-![SkillForge Academy — Study Command Center](assets/skillforge-command-center.png)
+![SkillForge Academy: Study Command Center](assets/skillforge-command-center.png)
 
 ---
 
@@ -179,34 +171,21 @@ The [public overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) shows
 | **RepoPact Core** | Repository-native work governance for humans and coding agents | A separate public project whose governance ideas inform the engineering workflow. It is not a required ForgeWire installation step. |
 | **ForgeWire** | Operator-owned application and runtime | Coordinates configured personas, providers, tools, state, and selected workflows in the private application. |
 | **ForgeWire Fabric** | Authenticated remote execution and operator control | A separate private alpha control plane. Selected, configuration-dependent application paths integrate with it; broad composition and public deployment remain open. |
-| **ForgeLink** | Human–agent communication and decisions | A separately maintained public project adjacent to ForgeWire's human-authority direction. The profile does not imply a shipped end-to-end integration. |
+| **ForgeLink** | Human-agent communication and decisions | A separately maintained public project adjacent to ForgeWire's human-authority direction. The profile does not imply a shipped end-to-end integration. |
 
-These boundaries are independently useful and evolve at different rates. The [ForgeWire architecture diagrams](https://github.com/ForgeWireLabs/ForgeWire-Overview#how-the-system-fits-together) distinguish existing paths, optional configuration, private implementation, and proposed work.
+Each project has its own scope and development pace. The [ForgeWire architecture diagrams](https://github.com/ForgeWireLabs/ForgeWire-Overview#how-the-system-fits-together) distinguish existing paths, optional configuration, private implementation, and proposed work.
 
-The model should not be the security boundary.
-
-The prompt should not be the only memory.
-
-The chat window should not be the audit log.
-
-The human should not become a notification endpoint.
-
-ForgeWire Labs projects are built to move those responsibilities into inspectable infrastructure.
+Permissions belong in software controls. Work history belongs in durable records. Requests for human decisions need a place where those decisions can be reviewed later.
 
 ---
 
 ## How I Build
 
-- **Human-led, deeply AI-assisted.** I work alongside AI systems across research, architecture, implementation, debugging, testing, review, and documentation. They materially contribute to the work; I select runtimes, languages, patterns, system boundaries, and workflows, integrate the results, and make the final technical calls.
-- **Research alongside the agents.** I do not treat agent output as an answer key. I investigate the same problems, compare evidence, challenge recommendations, and use disagreement or failed implementations to refine the model of the problem.
-- **Break deadlocks at the abstraction level.** When an agent loop keeps patching symptoms, I step back to the system boundary, identify the missing abstraction or root cause, and redirect implementation around that correction.
-- **Systems before components.** A working part is not a working system. I design for seams, failure modes, authority boundaries, recovery paths, and operational evidence first.
-- **Evidence over demos.** Releases should include documentation, tests, security context, known limitations, architecture, and validation paths so they can be evaluated seriously.
-- **Prompt text is not a security boundary.** Agents receive projected authority; tools, policy, scope, and execution layers enforce what is actually allowed.
-- **Parity and portability.** Acceleration paths get portable reference implementations. The system should not be pinned to one language, model provider, database, harness, cloud, or machine.
-- **Local-first where it matters.** Human communication, credentials, private state, and operator decisions should remain close to the person unless a stronger boundary is deliberately designed.
-- **Research is gated.** Speculative ideas move through isolated implementation, baseline comparison, controlled evaluation, failure analysis, observe-only integration, and limited canary testing before production adoption.
-- **Failure should become state.** A failed provider, denied approval, broken dependency, missing capability, or exceeded authority should be visible, recoverable system state — not confident language hiding uncertainty.
+I start by defining who owns an action, what data it can use, and how a failure will appear to the operator. I use AI coding tools throughout the work, but I check their results against the code, the tests, and the behavior of the running system.
+
+When a proposed fix keeps failing, I revisit the design instead of adding another patch. I keep decisions and evidence in the repository so a later session can pick up the work. Experimental ideas go through isolated trials and comparison with a baseline before they enter the application.
+
+I prefer local storage for private state and operator decisions. Remote execution has to carry explicit scope and leave a record of what ran. These choices are visible in RepoPact, Fabric, ForgeLink, and ForgeWire, though each project is at a different stage.
 
 **Stack:** Rust · Python · TypeScript · React · Tauri · Electron · GTK · SQLite · rqlite · PostgreSQL · PowerShell · GitHub Actions
 
@@ -232,26 +211,26 @@ Across those generations:
 
 Historical projects:
 
-- [SCOUT-2](https://github.com/ForgeWireLabs/SCOUT-2) — *Historical.* Multi-agent assistant platform; a record of experiments, communication tools, agent patterns, and architectural limits that led to ForgeWire, ForgeLink, and later infrastructure.
-- Earlier public projects (**SCOUT**, **Feed-Portal**, **MED.I.C.**) are *archived* and kept for history — not current work.
+- [SCOUT-2](https://github.com/ForgeWireLabs/SCOUT-2): *Historical.* Multi-agent assistant platform; a record of experiments, communication tools, agent patterns, and architectural limits that led to ForgeWire, ForgeLink, and later infrastructure.
+- Earlier public projects (**SCOUT**, **Feed-Portal**, **MED.I.C.**) are *archived* and kept for history: not current work.
 
 ---
 
-<!-- TODO (headshot — on you): once you add assets/headshot.jpg, uncomment the block below.
+<!-- TODO (headshot: on you): once you add assets/headshot.jpg, uncomment the block below.
 <img src="assets/headshot.jpg" align="right" width="180" alt="Jeremy Shows" />
 -->
 
 <!-- TODO (writing): drafts live in writing/. Once finalized, uncomment to surface them.
 ## Writing
 
-- **Agentic systems are systems first and models second** — reliability lives in the assembly, not the component.
-- **Why coding agents need repository-native governance** — binding invariants and durable state in the repo.
-- **Remote agents without surrendering execution control** — signed dispatch, scope-bound tokens, audited runs.
-- **Human attention is infrastructure** — why agent systems need private communication boundaries.
-- **Building serious AI infrastructure on constrained hardware** — constraints as a design input.
-- **What failed between SCOUT and ForgeWire** — the lineage read as corrected structural failures.
+- **Agentic systems are systems first and models second**: reliability lives in the assembly, not the component.
+- **Why coding agents need repository-native governance**: binding invariants and durable state in the repo.
+- **Remote agents without surrendering execution control**: signed dispatch, scope-bound tokens, audited runs.
+- **Human attention is infrastructure**: why agent systems need private communication boundaries.
+- **Building serious AI infrastructure on constrained hardware**: constraints as a design input.
+- **What failed between SCOUT and ForgeWire**: the lineage read as corrected structural failures.
 
 ---
 -->
 
-**Independent · founder-led · largely solo · deeply AI-assisted · evidence-driven.** Reach me through the repositories above, or open an issue/security advisory on the relevant public project.
+**Independent, founder-led engineering with substantial AI assistance.** Reach me through the repositories above, or open an issue/security advisory on the relevant public project.
