@@ -1,4 +1,4 @@
-![ForgeWire Labs: software for AI work, remote execution, and human decisions](assets/banner.svg)
+![ForgeWire Labs: Independent engineering and applied AI](assets/hero.png)
 
 <p align="center"><strong>FORGEWIRE · COMING SOON</strong><br>Private development · No public download or release date announced</p>
 
