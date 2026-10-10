@@ -70,11 +70,7 @@ Fabric is for operators who want remote agents, local compute, GPU boxes, build 
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
-**CLI and desktop views.** These illustrations use synthetic data. They show the kinds of status, task, and approval information an operator can review. They are not captures of a live Fabric installation.
-
-| CLI | Desktop |
-| --- | --- |
-| ![Illustrated Fabric CLI operator view with synthetic task status](assets/fabric-cli-preview.svg) | ![Illustrated Fabric desktop dashboard with synthetic runner and approval status](assets/fabric-desktop-preview.svg) |
+Current CLI and desktop screenshots will be added after capture from the current Fabric build against isolated demo data.
 
 ---
 
@@ -104,6 +100,10 @@ RepoPact does not replace coding agents. It gives them a durable operating envir
 
 [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) is the separate Tauri 2 desktop/mobile application in development. Its build, packaging, and platform acceptance are independent of the released Core package.
 
+`coding-agents` · `repository-governance` · `agents-md` · `developer-tools` · `ai-governance`
+
+![RepoPact core loop over a filesystem state machine](assets/repopact-flow.svg)
+
 ---
 
 ### 🔨 [ForgeWire Anvil](https://github.com/ForgeWireLabs/anvil) · **Developer Preview**
@@ -115,10 +115,6 @@ Anvil owns projects, issues, boards, sprints, workflows, and typed relations to 
 Anvil owns planning state. RepoPact owns repository governance, Fabric owns remote execution, and ForgeLink owns communication and human decisions. References between them do not transfer authority or duplicate the authoritative records.
 
 Anvil is published as an Apache-2.0 mirror of private monorepo development. Issues are welcome; pull requests are not accepted in the mirror.
-
-`coding-agents` · `repository-governance` · `agents-md` · `developer-tools` · `ai-governance`
-
-![RepoPact core loop over a filesystem state machine](assets/repopact-flow.svg)
 
 ---
 
