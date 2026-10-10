@@ -9,7 +9,6 @@ GitHub has **no API** for social previews — each must be uploaded by hand:
 
 | Repo | File |
 |---|---|
-| [forgewire-fabric](https://github.com/ForgeWireLabs/forgewire-fabric/settings) | `forgewire-fabric.png` |
 | [repopact-core](https://github.com/ForgeWireLabs/repopact-core/settings) | `repopact.png` |
 | [skillforge-academy](https://github.com/JeremyShows/skillforge-academy/settings) | `skillforge-academy.png` |
 | [ForgeWire-Overview](https://github.com/ForgeWireLabs/ForgeWire-Overview/settings) | `ForgeWire-Overview.png` |
@@ -17,6 +16,4 @@ GitHub has **no API** for social previews — each must be uploaded by hand:
 
 The `.svg` source files are kept alongside each `.png`. To re-render after an edit:
 
-```bash
-rsvg-convert -w 1280 -h 640 forgewire-fabric.svg -o forgewire-fabric.png
-```
+Regenerate an image from its matching SVG source before uploading it.

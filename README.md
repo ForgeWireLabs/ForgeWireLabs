@@ -70,8 +70,6 @@ Fabric is for operators who want remote agents, local compute, GPU boxes, build 
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
-![forgewire-fabric-cli doctor: a healthy hub on an rqlite-backed cluster](assets/fabric-doctor.svg)
-
 ---
 
 ### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Released CLI · Ongoing Development**
