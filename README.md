@@ -1,5 +1,17 @@
-<!-- Banner. Replace assets/banner.svg with a PNG export if you prefer raster. -->
 ![ForgeWire Labs — inspectable agentic infrastructure, repo-native governance, distributed execution, human-agent communication governance, practical AI](assets/banner.svg)
+
+<p align="center"><strong>FORGEWIRE · COMING SOON</strong><br>Private development · No public download or release date announced</p>
+
+**ForgeWire is the larger system taking shape at ForgeWire Labs.** It brings personas, configurable models, bounded tools, skills, state, and task execution into an operator-owned workspace. The [public ForgeWire overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) is the first stop for its product preview, architecture diagrams, private-workspace guidance, and current release status.
+
+| Explore | What you will find |
+| --- | --- |
+| [ForgeWire overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) | Current public presentation, a genuine development-build Projects capture, five architecture diagrams, and Coming Soon status. |
+| [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) | Public, early-development repository governance. |
+| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Public, early-development human–agent communication. |
+| ForgeWire Fabric | Private alpha execution control plane; no public deployment path. |
+
+---
 
 # Jeremy Shows
 
@@ -132,7 +144,7 @@ SkillForge is not part of the agentic infrastructure stack, but it reflects the 
 
 The projects above are extracted from, adjacent to, or designed for a larger **privately developed** system.
 
-ForgeWire is a modular architecture for coordinating models, agents, tools, skills, personas, memory, knowledge, task execution, automation, policy, human interaction, and distributed compute.
+ForgeWire is an application and runtime being built to coordinate models, personas, tools, skills, context, tasks, and compute around real work. Selected private workflows already use application services and graph execution. Broader run-lifecycle convergence and distributed execution integration remain active work.
 
 Its engineering thesis:
 
@@ -142,7 +154,7 @@ A capable model can still be part of an unreliable system.
 
 Models can be wrong, slow, expensive, unavailable, deprecated, or replaced. Providers change. Dependencies fail. Hardware becomes constrained. Requirements evolve. People still need the system to preserve context, expose what happened, recover when possible, and respect authority boundaries.
 
-ForgeWire focuses on the infrastructure around models:
+ForgeWire's engineering direction focuses on the infrastructure around models:
 
 - graceful degradation
 - explicit ownership boundaries
@@ -156,37 +168,20 @@ ForgeWire focuses on the infrastructure around models:
 - human approval paths
 - repo-native memory and governance
 
-The [public overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) documents the direction and release status without presenting unfinished private work as a product.
+The [public overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) shows the current interface evidence, architecture and limits. ForgeWire has no public build, supported install path, stable API, or announced release date.
 
 ---
 
-## How the Pieces Fit
+## How the Pieces Relate
 
-```text
-Outer harness
-Claude Code / Codex / Cursor / OpenHands / VS Code agents / local agents
-        |
-        v
-RepoPact
-repo-native work governance:
-invariants, active work, evidence, drift, decisions, history
-        |
-        v
-ForgeWire
-provider network, personas, skills, memory, knowledge, orchestration
-        |
-        +----------------------+
-        |                      |
-        v                      v
-Fabric                 ForgeLink
-secure execution       human-agent communication
-dispatch, policy,      ask, decide, record,
-streams, audit         replay outcome
-        |
-        v
-Runner / model
-minimal safe projection needed to act
-```
+| Project | Boundary | Relationship to ForgeWire |
+| --- | --- | --- |
+| **RepoPact Core** | Repository-native work governance for humans and coding agents | A separate public project whose governance ideas inform the engineering workflow. It is not a required ForgeWire installation step. |
+| **ForgeWire** | Operator-owned application and runtime | Coordinates configured personas, providers, tools, state, and selected workflows in the private application. |
+| **ForgeWire Fabric** | Authenticated remote execution and operator control | A separate private alpha control plane. Selected, configuration-dependent application paths integrate with it; broad composition and public deployment remain open. |
+| **ForgeLink** | Human–agent communication and decisions | A separately maintained public project adjacent to ForgeWire's human-authority direction. The profile does not imply a shipped end-to-end integration. |
+
+These boundaries are independently useful and evolve at different rates. The [ForgeWire architecture diagrams](https://github.com/ForgeWireLabs/ForgeWire-Overview#how-the-system-fits-together) distinguish existing paths, optional configuration, private implementation, and proposed work.
 
 The model should not be the security boundary.
 
@@ -237,7 +232,7 @@ Across those generations:
 
 Historical projects:
 
-- [SCOUT-2](https://github.com/JeremyShows/SCOUT-2) — *Historical.* Multi-agent assistant platform; a record of experiments, communication tools, agent patterns, and architectural limits that led to ForgeWire, ForgeLink, and later infrastructure.
+- [SCOUT-2](https://github.com/ForgeWireLabs/SCOUT-2) — *Historical.* Multi-agent assistant platform; a record of experiments, communication tools, agent patterns, and architectural limits that led to ForgeWire, ForgeLink, and later infrastructure.
 - Earlier public projects (**SCOUT**, **Feed-Portal**, **MED.I.C.**) are *archived* and kept for history — not current work.
 
 ---
