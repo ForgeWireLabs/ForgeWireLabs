@@ -70,6 +70,12 @@ Fabric is for operators who want remote agents, local compute, GPU boxes, build 
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
+**CLI and desktop views.** These illustrations use synthetic data. They show the kinds of status, task, and approval information an operator can review. They are not captures of a live Fabric installation.
+
+| CLI | Desktop |
+| --- | --- |
+| ![Illustrated Fabric CLI operator view with synthetic task status](assets/fabric-cli-preview.svg) | ![Illustrated Fabric desktop dashboard with synthetic runner and approval status](assets/fabric-desktop-preview.svg) |
+
 ---
 
 ### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Released CLI · Ongoing Development**
