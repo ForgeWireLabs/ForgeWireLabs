@@ -7,8 +7,11 @@
 | Explore | What you will find |
 | --- | --- |
 | [ForgeWire overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) | Current public presentation, a genuine development-build Projects capture, five architecture diagrams, and Coming Soon status. |
-| [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) | Public, early-development repository governance. |
-| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Public, early-development human-agent communication. |
+| [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) | Released repository-native governance CLI and canonical Rust engine, with ongoing development and research. |
+| [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) | Separate Tauri desktop/mobile application in development. |
+| [Anvil](https://github.com/ForgeWireLabs/anvil) | Public developer preview of a local-first planning ledger. |
+| [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) | Published Windows learning app; reusable course-platform features are in beta development. |
+| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Locally owned communications and coordination for people, agents, and applications. |
 | ForgeWire Fabric | Private alpha execution control plane; no public deployment path. |
 
 ---
@@ -21,7 +24,7 @@ I build **inspectable agentic infrastructure**: repo-native work governance, sec
 
 ForgeWire Labs is a **largely solo, human-led, deeply AI-assisted engineering and research effort**. I work directly alongside multiple AI systems across technical research, architecture, implementation, debugging, testing, review, and documentation. I choose runtimes, languages, system boundaries, patterns, workflows, and product direction; challenge or reject agent proposals; and often step into deadlocked implementation loops with the root-cause fix or missing abstraction before sending the work back through implementation and validation.
 
-AI systems make substantial contributions to the work. I do not claim unaided authorship, and the projects build extensively on open research, open-source software, commercial AI tools, and established systems engineering. At the same time, the engineering process is not delegated wholesale to agents: I research alongside them, integrate the resulting work, and retain technical responsibility for architecture, system behavior, validation, and final acceptance.
+The work builds on open research, open-source software, commercial AI tools, and established systems engineering. I direct and integrate AI contributions, research alongside the models, and retain technical responsibility for architecture, system behavior, validation, and final acceptance.
 
 Former mechanic, race-car builder, fabricator, IT professional, and small-business owner, now building distributed systems and applied AI infrastructure. I see AI systems as **machinery**, with interfaces, tolerances, feedback paths, authority boundaries, and failure modes. I hold them to that standard: a convincing demo is not enough; the system has to keep working when a part fails, the hardware is constrained, the requirements change, or an automated process exceeds its authority.
 
@@ -31,15 +34,18 @@ Former mechanic, race-car builder, fabricator, IT professional, and small-busine
 
 ## What ForgeWire Labs Builds
 
-ForgeWire Labs builds tools for tracking agent work, setting permissions, running tasks, and recording decisions.
+ForgeWire Labs builds software for governed engineering, planning, distributed execution, communication, and structured learning.
 
 The projects cover different parts of that work. Some have public repositories; others are still private:
 
 ```text
-RepoPact  → repository work records                 [public / Apache-2.0]
-Fabric    → remote execution                       [private / proprietary]
-ForgeLink → human-agent communication               [public project]
-ForgeWire → application and runtime                 [private development]
+RepoPact Core      → repository-native governance   [public / Apache-2.0]
+RepoPact Workbench → governance application         [public / in development]
+Anvil             → planning ledger                [public / developer preview]
+Fabric            → remote execution               [private / proprietary]
+ForgeLink         → communication and coordination [public project]
+SkillForge        → structured learning            [public / Apache-2.0]
+ForgeWire         → application and runtime         [private development]
 ```
 
 The common concern is practical: people need to know what ran, what it changed, and what to do when it fails.
@@ -60,7 +66,7 @@ authorized intent → signed dispatch → scoped runner → streamed execution �
 
 Fabric is for operators who want remote agents, local compute, GPU boxes, build hosts, lab machines, and private infrastructure without surrendering execution control to a hosted agent platform.
 
-**Licensing status:** current Fabric source and current/future ForgeWire Labs development are private and proprietary, not open source, unless a specific distribution is explicitly licensed otherwise. Versions or copies previously distributed under Apache License 2.0 remain licensed under the terms that accompanied those specific versions or copies. The move to private development does not revoke rights already granted for historical Apache-2.0 distributions.
+**Licensing status:** current private ForgeWire and Fabric development is proprietary unless a specific distribution is explicitly licensed otherwise. Public ForgeWire Labs projects retain their own licenses. Versions or copies previously distributed under Apache License 2.0 remain licensed under the terms that accompanied those specific versions or copies. The move to private development does not revoke rights already granted for historical Apache-2.0 distributions.
 
 `agentic-ai` · `remote-execution` · `mcp` · `distributed-systems` · `rust`
 
@@ -68,11 +74,13 @@ Fabric is for operators who want remote agents, local compute, GPU boxes, build 
 
 ---
 
-### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Available: Early Development**
+### 📜 [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) · **Released CLI · Ongoing Development**
 
 [![license](https://img.shields.io/github/license/ForgeWireLabs/repopact-core?color=3b82f6)](https://github.com/ForgeWireLabs/repopact-core/blob/main/LICENSE)
 
 A **repo-native kernel for durable work between humans and coding agents**.
+
+The stable CLI/headless package is available through PyPI as `repopact`. It includes the Python command surface and canonical Rust semantic engine; the source tree continues to evolve separately from the published release.
 
 RepoPact keeps authority, intent, work state, evidence, decisions, drift checks, and project history inside the repository instead of letting them vanish with each agent session. Claude Code, Codex, Cursor, OpenHands, VS Code agents, and other coding tools can use that repository state.
 
@@ -90,7 +98,19 @@ can be meaningful when the repo already defines active work, invariants, evidenc
 
 RepoPact does not replace coding agents. It gives them a durable operating environment.
 
-The desktop and mobile application is developed separately in [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench).
+[RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) is the separate Tauri 2 desktop/mobile application in development. Its build, packaging, and platform acceptance are independent of the released Core package.
+
+---
+
+### 🔨 [ForgeWire Anvil](https://github.com/ForgeWireLabs/anvil) · **Developer Preview**
+
+A **local-first planning ledger for human and agentic work**.
+
+Anvil owns projects, issues, boards, sprints, workflows, and typed relations to external work records. Its built-in store uses local JSON with no required network service or external issue-tracker account. The current developer preview has a single-writer store; its API and schema may change.
+
+Anvil owns planning state. RepoPact owns repository governance, Fabric owns remote execution, and ForgeLink owns communication and human decisions. References between them do not transfer authority or duplicate the authoritative records.
+
+Anvil is published as an Apache-2.0 mirror of private monorepo development. Issues are welcome; pull requests are not accepted in the mirror.
 
 `coding-agents` · `repository-governance` · `agents-md` · `developer-tools` · `ai-governance`
 
@@ -100,15 +120,15 @@ The desktop and mobile application is developed separately in [RepoPact Workbenc
 
 ### ☎️ [ForgeLink](https://github.com/JeremyShows/ForgeLink) · **Available: Early Development**
 
-A local-first **communications and decision runtime for humans and agents**.
+A locally owned **communications and coordination platform for people, agents, and applications**.
 
-ForgeLink gives agents a way to request attention or approval and gives people one place to review those requests. It records decisions and outcomes without pushing sensitive context into ordinary chat channels.
+People can use ForgeLink directly to communicate, manage contacts and channels, review history, and control communication policy. Agents and applications participate through governed local interfaces, including requests for attention or approval. Communication state, operator decisions, and authority remain locally owned.
 
 ```text
 human / agent / channel → governed communication state → decision → recorded outcome → replay
 ```
 
-ForgeLink currently includes SMS/MMS through Twilio and Telnyx, Twilio Voice, call history, contacts, approval requests with supporting evidence, signed decision records, and an audit chain. It runs as an Electron/TypeScript app with local SQLite storage, an MCP bridge, and backup/export tools. An operator view and mobile companion are in progress.
+ForgeLink currently includes SMS/MMS through Twilio and Telnyx, Twilio Voice, call history, contacts, approval requests with supporting evidence, signed decision records, and an audit chain. It runs as an Electron/TypeScript app with local SQLite storage, an MCP bridge, and backup/export tools. A shared-cockpit/Tauri transition and mobile work are in progress; the current supported desktop runtime remains Electron until its parity and retirement gates are satisfied.
 
 It is not a phone clone, social feed, public messaging platform, work runner, or hosted notification relay. It is a private operator boundary for human-agent communication.
 
@@ -118,19 +138,23 @@ It is not a phone clone, social feed, public messaging platform, work runner, or
 
 ## Product Work
 
-### 🎓 [SkillForge Academy](https://github.com/JeremyShows/skillforge-academy) · **Downloadable Product**
+### 🎓 [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) · **Published Windows App · Course Platform in Beta Development**
 
-[![release](https://img.shields.io/github/v/release/JeremyShows/skillforge-academy?label=download&color=22c55e)](https://github.com/JeremyShows/skillforge-academy/releases)
+[![release](https://img.shields.io/github/v/release/ForgeWireLabs/skillforge-academy?label=download&color=22c55e)](https://github.com/ForgeWireLabs/skillforge-academy/releases)
 
-An **offline-first certification learning and exam-prep desktop app**, starting with CompTIA A+.
+An **offline-first learning platform built around structured courses, guided instruction, practical application, and measurable mastery**.
 
-SkillForge Academy includes original practice questions, performance-based questions, mock exams, spaced-repetition flashcards, readiness analytics, and local progress storage. It is built with Tauri, Rust, and React.
+Certification preparation is one use of the platform. The certification workspace includes CompTIA A+, Network+, and Security+ tracks with original lessons and practice material, performance-based exercises, mock exams, spaced-repetition cards, analytics, notes, and bookmarks.
 
-SkillForge is not part of the agentic infrastructure stack, but it reflects the same engineering priorities: local-first operation, practical usefulness, visible progress, durable state, and software that remains useful without a cloud dependency.
+The published Windows release and current course-platform development have different maturity boundaries. Current main includes a reusable course runtime and validated local `.skillforge-course` package import/export. Course-platform features remain in beta development, with migration, persistence, backup, and acceptance work still open. See the project's [maturity matrix](https://github.com/ForgeWireLabs/skillforge-academy/blob/main/docs/feature-maturity.md) before treating development features as released behavior.
 
-`comptia` · `exam-prep` · `tauri` · `rust` · `react` · `offline-first`
+SkillForge is built with Tauri, Rust, React, and TypeScript and is open source under Apache-2.0. Learner state is local, and the application requires no account or cloud service. It is independently useful and shares the wider portfolio's emphasis on durable state and practical usefulness.
 
-![SkillForge Academy: Study Command Center](assets/skillforge-command-center.png)
+`structured-learning` · `course-platform` · `exam-prep` · `tauri` · `rust` · `react` · `offline-first`
+
+![SkillForge Academy certification workspace: Study Command Center](assets/skillforge-command-center.png)
+
+*Certification study workspace preview; this image does not represent the newer course-platform surfaces or establish their release readiness.*
 
 ---
 
@@ -173,7 +197,10 @@ The [public overview](https://github.com/ForgeWireLabs/ForgeWire-Overview) shows
 | **RepoPact Core** | Repository-native work governance for humans and coding agents | A separate public project whose governance ideas inform the engineering workflow. It is not a required ForgeWire installation step. |
 | **ForgeWire** | Operator-owned application and runtime | Coordinates configured personas, providers, tools, state, and selected workflows in the private application. |
 | **ForgeWire Fabric** | Authenticated remote execution and operator control | A separate private alpha control plane. Selected, configuration-dependent application paths integrate with it; broad composition and public deployment remain open. |
-| **ForgeLink** | Human-agent communication and decisions | A separately maintained public project adjacent to ForgeWire's human-authority direction. The profile does not imply a shipped end-to-end integration. |
+| **ForgeLink** | Communication, coordination, and human authority | An independently useful public product for people, agents, and applications. The profile does not imply a shipped end-to-end ForgeWire integration. |
+| **RepoPact Workbench** | Desktop/mobile governance application | A separate application consuming Core; platform acceptance is independent of the Core release. |
+| **Anvil** | Local planning ledger | Owns planning records and typed references; it does not own execution or repository governance. |
+| **SkillForge Academy** | Structured learning and course progression | An independent public learning product, rather than a required part of the ForgeWire runtime. |
 
 Each project has its own scope and development pace. The [ForgeWire architecture diagrams](https://github.com/ForgeWireLabs/ForgeWire-Overview#how-the-system-fits-together) distinguish existing paths, optional configuration, private implementation, and proposed work.
 
@@ -183,7 +210,7 @@ Permissions belong in software controls. Work history belongs in durable records
 
 ## How I Build
 
-I start by defining who owns an action, what data it can use, and how a failure will appear to the operator. I use AI coding tools throughout the work, but I check their results against the code, the tests, and the behavior of the running system.
+I start by defining who owns an action, what data it can use, and how a failure will appear to the operator. Evidence comes from the code, tests, and behavior of the running system.
 
 When a proposed fix keeps failing, I revisit the design instead of adding another patch. I keep decisions and evidence in the repository so a later session can pick up the work. Experimental ideas go through isolated trials and comparison with a baseline before they enter the application.
 
@@ -235,4 +262,4 @@ Historical projects:
 ---
 -->
 
-**Independent, founder-led engineering with substantial AI assistance.** Reach me through the repositories above, or open an issue/security advisory on the relevant public project.
+Reach me through the repositories above. Use the relevant project's security reporting process for suspected vulnerabilities.
