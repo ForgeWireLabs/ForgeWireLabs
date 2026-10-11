@@ -20,13 +20,11 @@
 
 **Founder & Principal Engineer, ForgeWire Labs**
 
-I build **inspectable agentic infrastructure**: repo-native work governance, secure distributed execution, human-in-the-loop communication boundaries, and practical AI software that stays useful under real-world constraints. Models can be fallible, hardware can be limited, infrastructure can change, and real people depend on the result.
+I build software for people working with AI agents: repository tools that track decisions and evidence, remote execution with explicit permissions, and private channels for approvals. The work has to hold up when a model makes a mistake, a machine fails, or the operator needs to step in.
 
-ForgeWire Labs is a **largely solo, human-led, deeply AI-assisted engineering and research effort**. I work directly alongside multiple AI systems across technical research, architecture, implementation, debugging, testing, review, and documentation. I choose runtimes, languages, system boundaries, patterns, workflows, and product direction; challenge or reject agent proposals; and often step into deadlocked implementation loops with the root-cause fix or missing abstraction before sending the work back through implementation and validation.
+I work on the research, architecture, code, debugging, tests, and documentation with substantial help from AI systems. I choose the tools and design, check their output, and decide what gets accepted. The projects also draw on open research, open-source software, commercial tools, and established engineering practice.
 
-The work builds on open research, open-source software, commercial AI tools, and established systems engineering. I direct and integrate AI contributions, research alongside the models, and retain technical responsibility for architecture, system behavior, validation, and final acceptance.
-
-Former mechanic, race-car builder, fabricator, IT professional, and small-business owner, now building distributed systems and applied AI infrastructure. I see AI systems as **machinery**, with interfaces, tolerances, feedback paths, authority boundaries, and failure modes. I hold them to that standard: a convincing demo is not enough; the system has to keep working when a part fails, the hardware is constrained, the requirements change, or an automated process exceeds its authority.
+I was a mechanic, race-car builder, fabricator, IT professional, and small-business owner before working on distributed systems and AI software. That background shapes how I build: I look for the parts, their connections, and what happens when one fails. A demo has to survive contact with limited hardware, changing requirements, and operator intervention.
 
 > **Build it. Test it under failure. Preserve the evidence. Understand its limits. Then decide whether it is useful.**
 
