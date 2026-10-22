@@ -30,14 +30,12 @@ ForgeWire Labs builds software for governed work, planning, communication, and s
 
 The projects cover different parts of that work. Some have public repositories; others are still private:
 
-| Project | What it is | Availability |
-| --- | --- | --- |
-| [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) | Repository-native governance CLI and canonical engine | Released CLI; ongoing development |
-| [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) | Native interface for exploring RepoPact records and reviewing supported changes | Source-build preview |
-| [Anvil](https://github.com/ForgeWireLabs/anvil) | Local-first planning ledger | Public developer preview |
-| [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) | Structured learning application | Published Windows app; course-platform work in beta |
-| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Locally owned communication and coordination | Public repository; latest packaged release v2.0.1, with main at v2.0.3 per its current README |
-| ForgeWire and Fabric | Private projects in development | No public download or release date |
+- [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) — repository-native governance CLI and canonical engine. Released CLI; development continues.
+- [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) — native interface for exploring RepoPact records and reviewing supported changes. Source-build preview.
+- [Anvil](https://github.com/ForgeWireLabs/anvil) — local-first planning ledger. Public developer preview.
+- [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) — structured learning application. Published Windows app; course-platform work in beta.
+- [ForgeLink](https://github.com/JeremyShows/ForgeLink) — locally owned communication and coordination. Public repository; latest packaged release v2.0.1, with main at v2.0.3 per its current README.
+- ForgeWire and Fabric — private projects in development. No public download or release date.
 
 The common concern is practical: people need to know what ran, what it changed, and what to do when it fails.
 
