@@ -1,0 +1,55 @@
+{
+  "format": "forgewire-portfolio-visual-assets-v1",
+  "assets": [
+    {
+      "path": "assets/forgewire-labs-hero.svg",
+      "sha256": "bac7872ef84d7171fee53995cf8f23964f9002f384dd5f8bd57b03b35ce603e3",
+      "bytes": 3080
+    },
+    {
+      "path": "assets/forgewire-labs-hero.png",
+      "sha256": "e5e9ec45595fbf829ee5f55543d75078ebb27cba0f20a9789a8f74f9cc719d3f",
+      "bytes": 95278
+    },
+    {
+      "path": "social/ForgeWireLabs.svg",
+      "sha256": "c25a4aca6b3d1105086fc80c606859fc08b242b098039f0711b9f9fb395f78c5",
+      "bytes": 2881
+    },
+    {
+      "path": "social/ForgeWireLabs.png",
+      "sha256": "745d62d2108cd7401b4e4a7af1c1c4fe5ffe7184ace704d13b4ea0326eda4b88",
+      "bytes": 88669
+    },
+    {
+      "path": "social/repopact-core.svg",
+      "sha256": "89cb420ded719a6a453b5f4bdb1e3bef183491849e37fecd5de287ba29ddf225",
+      "bytes": 2309
+    },
+    {
+      "path": "social/repopact-core.png",
+      "sha256": "ada23b516d78b78a2c14597ca7b10fa23ac7f629050ef26ab48caf6ff9c7d3aa",
+      "bytes": 84406
+    },
+    {
+      "path": "social/repopact-workbench.svg",
+      "sha256": "eed6d3a8e362d5ca764a2cdf46c1ea2100cc344904a9125cd10f1e6d6c0ca8d0",
+      "bytes": 2411
+    },
+    {
+      "path": "social/repopact-workbench.png",
+      "sha256": "f742fd62f8847fa3ae0c237f5453d6bf0794dffad021a5b9fb48b9e31eb68186",
+      "bytes": 81830
+    }
+  ],
+  "social_previews": {
+    "ForgeWireLabs": "social/ForgeWireLabs.png",
+    "repopact-core": "social/repopact-core.png",
+    "repopact-workbench": "social/repopact-workbench.png"
+  },
+  "dimensions": [
+    1280,
+    640
+  ],
+  "note": "The organization profile hero is 1280 \u00d7 560. PNG previews are rendered from the adjacent SVG sources with rsvg-convert."
+}
