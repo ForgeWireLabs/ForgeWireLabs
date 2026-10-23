@@ -3,8 +3,8 @@
   "assets": [
     {
       "path": "assets/forgewire-labs-hero.svg",
-      "sha256": "bac7872ef84d7171fee53995cf8f23964f9002f384dd5f8bd57b03b35ce603e3",
-      "bytes": 3080
+      "sha256": "ea8232bb91b77d7b1b2b76260a1b567872e676810288035530ca551ea56721bc",
+      "bytes": 3110
     },
     {
       "path": "assets/forgewire-labs-hero.png",
@@ -12,9 +12,19 @@
       "bytes": 95278
     },
     {
+      "path": "social/ForgeWire-Overview.svg",
+      "sha256": "0178cd245bef994c9d5722ad412b35a9d6bd8493972c2f3b848a9154a5bb98fa",
+      "bytes": 2096
+    },
+    {
+      "path": "social/ForgeWire-Overview.png",
+      "sha256": "8589d23bd350a4bf40287b9dd52c585ec2b680981336642541de8eff9c14d633",
+      "bytes": 98454
+    },
+    {
       "path": "social/ForgeWireLabs.svg",
-      "sha256": "c25a4aca6b3d1105086fc80c606859fc08b242b098039f0711b9f9fb395f78c5",
-      "bytes": 2881
+      "sha256": "a1044b664474ed09aa9574f17810ee8cbe9c381707f218358f82a03092781e7c",
+      "bytes": 2909
     },
     {
       "path": "social/ForgeWireLabs.png",
@@ -23,8 +33,8 @@
     },
     {
       "path": "social/repopact-core.svg",
-      "sha256": "89cb420ded719a6a453b5f4bdb1e3bef183491849e37fecd5de287ba29ddf225",
-      "bytes": 2309
+      "sha256": "187c9da6c3cd313ccc49b4e3214a649fd82632f00e0fa153122fb642ff8ccf42",
+      "bytes": 2314
     },
     {
       "path": "social/repopact-core.png",
@@ -33,13 +43,33 @@
     },
     {
       "path": "social/repopact-workbench.svg",
-      "sha256": "eed6d3a8e362d5ca764a2cdf46c1ea2100cc344904a9125cd10f1e6d6c0ca8d0",
-      "bytes": 2411
+      "sha256": "9a9e1d1a76918e546b1d8155c148e39be7b4c9ef6902db065757609a513a5e88",
+      "bytes": 2417
     },
     {
       "path": "social/repopact-workbench.png",
       "sha256": "f742fd62f8847fa3ae0c237f5453d6bf0794dffad021a5b9fb48b9e31eb68186",
       "bytes": 81830
+    },
+    {
+      "path": "social/repopact.svg",
+      "sha256": "d812728875d50ec0e7285aa9d1e0982a4f000732a39d893f69612e1b089d7583",
+      "bytes": 2093
+    },
+    {
+      "path": "social/repopact.png",
+      "sha256": "b7adad5259568575c67d4446fe0f2921409960ece9fd8ee9118407e4ffb025b7",
+      "bytes": 93714
+    },
+    {
+      "path": "social/skillforge-academy.svg",
+      "sha256": "9760fc38ea7c579aeb68621a75a15885a0e1e45445f45f293c1d8ff1817a273a",
+      "bytes": 2098
+    },
+    {
+      "path": "social/skillforge-academy.png",
+      "sha256": "ac008f3d06f3ba409be9e681ad90845417b5b77e804c4a80bcae0ae5278820be",
+      "bytes": 91494
     }
   ],
   "social_previews": {
@@ -51,5 +81,5 @@
     1280,
     640
   ],
-  "note": "The organization profile hero is 1280 \u00d7 560. PNG previews are rendered from the adjacent SVG sources with rsvg-convert."
+  "note": "The organization profile hero is 1280 × 560. PNG previews are rendered from the adjacent SVG sources with rsvg-convert. The inventory lists all committed social-card SVG/PNG pairs; social_previews lists the profile/repository previews identified for upload, but their live GitHub settings must be checked separately."
 }

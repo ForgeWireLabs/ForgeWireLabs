@@ -30,14 +30,12 @@ ForgeWire Labs builds software for governed work, planning, communication, and s
 
 The projects cover different parts of that work. Some have public repositories; others are still private:
 
-| Project | What it is | Availability |
-| --- | --- | --- |
-| [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) | Repository-native governance CLI and canonical engine | Released CLI; ongoing development |
-| [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) | Native interface for exploring RepoPact records and reviewing supported changes | Source-build preview |
-| [Anvil](https://github.com/ForgeWireLabs/anvil) | Local-first planning ledger | Public developer preview |
-| [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) | Structured learning application | Published Windows app; course-platform work in beta |
-| [ForgeLink](https://github.com/JeremyShows/ForgeLink) | Locally owned communication and coordination | Public early development |
-| ForgeWire and Fabric | Private projects in development | No public download or release date |
+- [RepoPact Core](https://github.com/ForgeWireLabs/repopact-core) — repository-native governance CLI and canonical engine. Released CLI; development continues.
+- [RepoPact Workbench](https://github.com/ForgeWireLabs/repopact-workbench) — native interface for exploring RepoPact records and reviewing supported changes. Source-build preview.
+- [Anvil](https://github.com/ForgeWireLabs/anvil) — local-first planning ledger. Public developer preview.
+- [SkillForge Academy](https://github.com/ForgeWireLabs/skillforge-academy) — structured learning application. Published Windows app; course-platform work in beta.
+- [ForgeLink](https://github.com/JeremyShows/ForgeLink) — locally owned communication and coordination. Public repository; latest packaged release v2.0.1, with main at v2.0.3 per its current README.
+- ForgeWire and Fabric — private projects in development. No public download or release date.
 
 The common concern is practical: people need to know what ran, what it changed, and what to do when it fails.
 
@@ -89,7 +87,7 @@ Anvil is published as an Apache-2.0 mirror of private monorepo development. Issu
 
 ---
 
-### ☎️ [ForgeLink](https://github.com/JeremyShows/ForgeLink) · **Available: Early Development**
+### ☎️ [ForgeLink](https://github.com/JeremyShows/ForgeLink) · **Public Repository · Packaged Release v2.0.1**
 
 A locally owned **communications and coordination platform for people, agents, and applications**.
 
@@ -99,7 +97,7 @@ People can use ForgeLink directly to communicate, manage contacts and channels, 
 human / agent / channel → governed communication state → decision → recorded outcome → replay
 ```
 
-ForgeLink currently includes SMS/MMS through Twilio and Telnyx, Twilio Voice, call history, contacts, approval requests with supporting evidence, signed decision records, and an audit chain. It runs as an Electron/TypeScript app with local SQLite storage, an MCP bridge, and backup/export tools. A shared-cockpit/Tauri transition and mobile work are in progress; the current supported desktop runtime remains Electron until its parity and retirement gates are satisfied.
+ForgeLink's current README lists a packaged v2.0.1 release and repository version 2.0.3; `main` is ahead of the latest installer, so check the [release notes](https://github.com/JeremyShows/ForgeLink/releases) for the exact packaged feature set. The repository describes SMS/MMS through Twilio and Telnyx, Twilio Voice, call history, contacts, approval requests with supporting evidence, signed decision records, and an audit chain. It runs as an Electron/TypeScript app with local SQLite storage, an MCP bridge, and backup/export tools. A shared-cockpit/Tauri transition and mobile work are in progress; Electron remains the current packaged desktop runtime until its parity and retirement gates are satisfied.
 
 It is not a phone clone, social feed, public messaging platform, work runner, or hosted notification relay. It is a private operator boundary for human-agent communication.
 
